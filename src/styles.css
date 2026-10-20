@@ -270,3 +270,462 @@ select:focus-visible {
     aspect-ratio: 0.68;
   }
 }
+
+/* ==========================================
+   NOVELSWORLD — BLACK & GOLD LUXURY EDITION
+   ========================================== */
+
+:root {
+  --navy: #0b0b0d;
+  --ink: #f4efe5;
+  --muted: #aaa49a;
+  --gold: #d4af63;
+  --cream: #0b0b0d;
+  --line: #35302a;
+  --card: #151413;
+  --serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+}
+
+/* Main dark luxury palette */
+.app.dark {
+  --cream: #0b0b0d;
+  --ink: #f4efe5;
+  --muted: #aaa49a;
+  --gold: #e1bd72;
+  --line: #35302a;
+  --card: #151413;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      #292015 0%,
+      #11100e 36%,
+      #0b0b0d 75%
+    );
+  color: var(--ink);
+}
+
+.app.dark .announcement {
+  background: #080808;
+  color: #e5c782;
+  border-bottom: 1px solid #40311a;
+}
+
+.app.dark .topbar {
+  background: #0b0b0d;
+  border-bottom: 1px solid #28231b;
+}
+
+.app.dark .brand-gold,
+.app.dark .hero h1 em,
+.app.dark .section-heading h2 em,
+.app.dark .newsletter-copy h2 em {
+  color: #e3bd70;
+}
+
+.app.dark .brand-icon {
+  border-color: #d4af63;
+  color: #e5c782;
+  box-shadow: 0 0 18px #d4af631b;
+}
+
+.app.dark .nav a {
+  color: #c2b9aa;
+}
+
+.app.dark .nav a:hover {
+  color: #f0cc7b;
+  text-shadow: 0 0 12px #d4af6370;
+}
+
+/* Bold editorial typography */
+.app.dark .hero h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -1.8px;
+  text-shadow: 0 0 35px #d4af630c;
+}
+
+.app.dark .section-heading h2,
+.app.dark .newsletter-copy h2,
+.app.dark .modal-content h2,
+.app.dark .reader-inner h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.app.dark .section-heading h2 {
+  font-size: clamp(34px, 4vw, 44px);
+}
+
+.app.dark .book-meta h3,
+.app.dark .category-copy b,
+.app.dark .author-card > b {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.app.dark .eyebrow {
+  color: #dfb968;
+}
+
+/* Glowing gold primary buttons */
+.app.dark .primary-btn {
+  background: linear-gradient(135deg, #f0d59a, #bd9144);
+  border-color: #e2bd72;
+  color: #17110a;
+  font-weight: 800;
+  box-shadow: 0 0 0 transparent;
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease,
+    filter 250ms ease;
+}
+
+.app.dark .primary-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.08);
+  box-shadow:
+    0 0 12px #d4af6360,
+    0 0 32px #d4af6328;
+}
+
+.app.dark .icon-btn,
+.app.dark .saved-btn {
+  border-color: #443a29;
+}
+
+.app.dark .icon-btn:hover,
+.app.dark .saved-btn:hover {
+  color: #e5c782;
+  border-color: #d4af63;
+  box-shadow: 0 0 16px #d4af6320;
+}
+
+/* Hero graphics and decorative glow */
+.app.dark .hero-art:before {
+  background: radial-gradient(
+    circle,
+    #5d4524 0%,
+    #291e12 42%,
+    transparent 72%
+  );
+  opacity: 0.75;
+  filter: blur(8px);
+}
+
+.app.dark .art-orbit {
+  border-color: #d4af63;
+  opacity: 0.4;
+}
+
+.app.dark .art-star,
+.app.dark .art-spark {
+  color: #f0cc7b;
+  text-shadow: 0 0 18px #d4af63a0;
+  animation: gold-twinkle 3s ease-in-out infinite;
+}
+
+.app.dark .star-b {
+  animation-delay: 1s;
+}
+
+.app.dark .floating-note {
+  background: #191610;
+  border: 1px solid #544225;
+  box-shadow: 0 8px 35px #0008, 0 0 20px #d4af6310;
+}
+
+.app.dark .hero-book {
+  box-shadow: 8px 18px 35px #0009;
+}
+
+.app.dark .hero-book-front {
+  box-shadow: 0 18px 45px #000a, 0 0 22px #d4af6318;
+}
+
+.app.dark .hero-art:hover .hero-book-front {
+  filter: brightness(1.08);
+}
+
+/* Search box */
+.app.dark .search-panel {
+  background: #151412;
+  border-color: #55442a;
+  box-shadow: 0 12px 45px #0005, 0 0 22px #d4af630b;
+  border-radius: 8px;
+}
+
+.app.dark .search-panel input {
+  color: #f4efe5;
+}
+
+.app.dark .search-panel input::placeholder {
+  color: #938a7c;
+}
+
+.app.dark .search-panel > button:hover {
+  color: #e5c782;
+}
+
+/* Featured book cards */
+.app.dark .featured-card {
+  border: 1px solid #403321;
+  border-radius: 5px;
+  box-shadow: 0 12px 30px #0004;
+  transition:
+    transform 350ms ease,
+    border-color 350ms ease,
+    box-shadow 350ms ease;
+}
+
+.app.dark .featured-card:hover {
+  transform: translateY(-5px);
+  border-color: #d4af63;
+  box-shadow: 0 12px 35px #0008, 0 0 18px #d4af6319;
+}
+
+.app.dark .featured-card .cover {
+  transition: transform 600ms cubic-bezier(.2, .8, .2, 1);
+}
+
+.app.dark .featured-card:hover .cover {
+  transform: scale(1.055);
+}
+
+.app.dark .feature-overlay {
+  background: linear-gradient(
+    180deg,
+    #08080800 12%,
+    #08080848 42%,
+    #080808ed 100%
+  );
+}
+
+/* Category cards */
+.app.dark .category-card {
+  background: linear-gradient(145deg, #191714, #111110);
+  border-color: #35302a;
+  border-radius: 5px;
+  transition:
+    transform 250ms ease,
+    border-color 250ms ease,
+    box-shadow 250ms ease;
+}
+
+.app.dark .category-card:hover {
+  transform: translateY(-4px);
+  border-color: #c8a45e;
+  box-shadow: 0 8px 25px #0005, 0 0 15px #d4af6314;
+}
+
+.app.dark .category-icon {
+  background: #282116;
+  color: #e3bd70;
+  border: 1px solid #4c3a20;
+  border-radius: 4px;
+}
+
+/* Book gallery */
+.app.dark .book-card {
+  animation: book-arrive 600ms both;
+  animation-delay: calc(var(--book-index, 0) * 35ms);
+}
+
+.app.dark .book-cover-wrap {
+  background: #181613;
+  border: 1px solid #30291e;
+  border-radius: 4px;
+  box-shadow: 0 8px 20px #0004;
+  transition:
+    transform 300ms ease,
+    border-color 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.app.dark .book-card:hover .book-cover-wrap {
+  transform: translateY(-5px);
+  border-color: #b99551;
+  box-shadow: 0 14px 30px #0008, 0 0 18px #d4af6318;
+}
+
+.app.dark .book-meta h3 {
+  color: #f0e5d2;
+  transition: color 200ms ease;
+}
+
+.app.dark .book-meta h3:hover {
+  color: #e3bd70;
+}
+
+.app.dark .book-genre,
+.app.dark .rating,
+.app.dark .results-line button {
+  color: #dfb968;
+}
+
+.app.dark .public-tag {
+  background: #d4af63;
+  color: #15100a;
+}
+
+.app.dark .favorite-btn {
+  background: #17130ee8;
+  color: #e4d7bf;
+  border: 1px solid #6b5733;
+}
+
+.app.dark .favorite-btn.is-favorite {
+  color: #f0bd81;
+}
+
+.app.dark .quick-read {
+  background: #d4af63f2;
+  color: #15100a;
+  font-weight: 700;
+}
+
+.app.dark .genre-pill {
+  border-color: #393127;
+  color: #bdb3a3;
+}
+
+.app.dark .genre-pill:hover,
+.app.dark .genre-pill.active {
+  background: #d4af63;
+  color: #17110a;
+  border-color: #d4af63;
+}
+
+.app.dark .sort-wrap select {
+  background: #171613;
+  color: #f4efe5;
+  border-color: #55442a;
+}
+
+/* Authors, quote and newsletter */
+.app.dark .author-card {
+  background: linear-gradient(145deg, #191714, #111110);
+  border-color: #35302a;
+  transition: transform 250ms ease, border-color 250ms ease;
+}
+
+.app.dark .author-card:hover {
+  transform: translateY(-5px);
+  border-color: #d4af63;
+}
+
+.app.dark .author-avatar {
+  background: #2a2115;
+  color: #e3bd70;
+  border-color: #66502c;
+  box-shadow: 0 0 0 5px #0b0b0d, 0 0 20px #d4af6314;
+}
+
+.app.dark .quote-band {
+  background:
+    radial-gradient(ellipse at 50% 100%, #49351b, transparent 65%),
+    #10100f;
+  border-top: 1px solid #49381e;
+  border-bottom: 1px solid #49381e;
+}
+
+.app.dark .newsletter-section {
+  background: linear-gradient(135deg, #211b12, #131210);
+  border: 1px solid #574328;
+  border-radius: 5px;
+  box-shadow: 0 12px 40px #0003;
+}
+
+.app.dark .newsletter-copy p,
+.app.dark .newsletter-form label,
+.app.dark .newsletter-form > small {
+  color: #b8ad9b;
+}
+
+.app.dark .newsletter-input {
+  background: #0e0d0b;
+  border-color: #574328;
+}
+
+.app.dark .newsletter-input input {
+  color: #f4efe5;
+}
+
+.app.dark .newsletter-input button {
+  background: #d4af63;
+  color: #17110a;
+}
+
+/* Modal and reading room */
+.app.dark .modal-backdrop {
+  background: #000000db;
+}
+
+.app.dark .book-modal {
+  border: 1px solid #514128;
+  box-shadow: 0 25px 90px #000b, 0 0 25px #d4af6310;
+  border-radius: 5px;
+}
+
+.app.dark .modal-cover {
+  background: #19150f;
+}
+
+.app.dark .modal-close,
+.app.dark .modal-save {
+  background: #191714;
+  border-color: #4a3a24;
+  color: #e5c782;
+}
+
+.app.dark .reader-source {
+  background: #1b1710;
+  border-color: #4a3a24;
+}
+
+.app.dark .reader-top button {
+  border-color: #4a3a24;
+}
+
+.app.dark .toast {
+  background: #20190f;
+  border: 1px solid #6a512c;
+  box-shadow: 0 8px 35px #0008, 0 0 18px #d4af6320;
+}
+
+/* Smooth entrances and subtle animated details */
+@keyframes book-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gold-twinkle {
+  0%, 100% {
+    opacity: 0.55;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app.dark *,
+  .app.dark *::before,
+  .app.dark *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

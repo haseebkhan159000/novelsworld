@@ -47,7 +47,7 @@ function App(){
   const [query,setQuery] = useState('');
   const [genre,setGenre] = useState('All Novels');
   const [sort,setSort] = useState('Popular');
-  const [dark,setDark] = useState(false);
+  const [dark,setDark] = useState(true);
   const [mobileMenu,setMobileMenu] = useState(false);
   const [active,setActive] = useState(null);
   const [reader,setReader] = useState(false);

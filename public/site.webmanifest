@@ -1,0 +1,19 @@
+
+{
+  "name": "Novel World",
+  "short_name": "Novel World",
+  "description": "Discover and read your favorite novels on Novel World.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6a0dad",
+  "icons": [
+    {
+      "src": "/novel-world-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
+
